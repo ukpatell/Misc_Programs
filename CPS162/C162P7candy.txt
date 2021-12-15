@@ -1,0 +1,48 @@
+C433
+candy corn
+10.0
+1.15
+C672
+caramels
+20.0
+1.25
+K761
+chocolate kisses
+22.0
+2.95
+F045
+fudge
+7.0
+4.99
+G123
+gumballs
+5.5
+1.75
+J004
+jelly beans
+30.0
+1.19
+L878
+licorice
+15.5
+2.30
+P767
+peanut brittle
+5.3
+3.45
+R117
+raisin clusters
+30.0
+1.79
+R068
+rock candy
+3.0
+1.5
+S030
+seafoam
+7.0
+1.19
+T555
+truffles
+12.0
+8.99
