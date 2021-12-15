@@ -1,0 +1,71 @@
+Algorith_BoxingJars
+
+#include<iostream>
+#include<fstream>
+
+
+double length,width,height		// Global Variables
+double diameter, jHeight		// ................
+double clearance = 0.25		// Default clearance
+
+bool checkUp(double,double,double,double,double);
+
+MAIN
+{
+	INPUT num(DOUBLE);			// number to read the file
+	COUNT DIMENSIONS;
+	create file object (Reading)
+	create file object (Output)
+	
+	openFile(P4Boxes.txt)
+	
+	while(inFile >> num)	// While theres a numbers
+	{
+		Increment Count
+		
+		switch(tempCount)
+		{
+			case 1:
+				length = num;
+				break;
+			case 2:
+				width = num;
+				break;
+			case 3: 
+				height = num;
+				break;
+			case 4:
+				diameter = num;
+				break;
+			case 5:
+				jHeight = num;
+				checkUp(length,width,height,diameter,jHeight);
+												//setprecision(2):Dimensions;
+				if(checkUp(length,width,height,diameter,jHeight) == true)					outFile<< length << "\t" << width << "\t" << height << "\t" <<diameter << "\t\t" << jHeight << "\tFits\n";	// OUTPUT FOR FIT				else					outFile<<length << "\t" << width << "\t" << height << "\t" <<diameter << "\t\t" << jHeight << "\tDoesn't Fit'\n"; //OUTPUT FOR NOT FIT
+				Reset Count
+				break;		
+		}
+		
+	}
+	Close inputFile
+	Display OutFILE saved message
+	Close outputfIle
+bool checkUp(double len, double wid, double hgt, double dia, double jhgt)
+{
+	Subtract Clearance from Length
+	Subtract Clearance from Width
+	Subtract Clearance from Height
+	
+	if(jhgt < len && dia < wid && dia < hgt)
+		return true;
+	if(jhgt < hgt && dia < len && dia < wid)
+		return true;
+	if(jhgt < wid && dia < len && dia < hgt)
+		return true;
+	else
+		return false;
+}
+
+Algorith_BoxingJars End
+	
+	
